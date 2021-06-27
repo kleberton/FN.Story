@@ -1,0 +1,14 @@
+C:\ProjetosVS\FN.Store\FN.Store.Data\obj\Debug\FN.Store.Data.csprojAssemblyReference.cache
+C:\ProjetosVS\FN.Store\FN.Store.Data\obj\Debug\FN.Store.Data.csproj.CoreCompileInputs.cache
+C:\ProjetosVS\FN.Store\FN.Store.Data\bin\Debug\FN.Store.Data.dll.config
+C:\ProjetosVS\FN.Store\FN.Store.Data\bin\Debug\FN.Store.Data.dll
+C:\ProjetosVS\FN.Store\FN.Store.Data\bin\Debug\FN.Store.Data.pdb
+C:\ProjetosVS\FN.Store\FN.Store.Data\bin\Debug\EntityFramework.dll
+C:\ProjetosVS\FN.Store\FN.Store.Data\bin\Debug\EntityFramework.SqlServer.dll
+C:\ProjetosVS\FN.Store\FN.Store.Data\bin\Debug\FN.Store.Domain.dll
+C:\ProjetosVS\FN.Store\FN.Store.Data\bin\Debug\FN.Store.Domain.pdb
+C:\ProjetosVS\FN.Store\FN.Store.Data\bin\Debug\EntityFramework.xml
+C:\ProjetosVS\FN.Store\FN.Store.Data\bin\Debug\EntityFramework.SqlServer.xml
+C:\ProjetosVS\FN.Store\FN.Store.Data\obj\Debug\FN.Store.Data.csproj.CopyComplete
+C:\ProjetosVS\FN.Store\FN.Store.Data\obj\Debug\FN.Store.Data.dll
+C:\ProjetosVS\FN.Store\FN.Store.Data\obj\Debug\FN.Store.Data.pdb

@@ -1,0 +1,9 @@
+﻿
+label.is-invalid {
+    font-weight:bold;
+    color: #dc3545;
+}
+
+.footer-custom span{
+    color: #fff !important;
+}

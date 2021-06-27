@@ -1,0 +1,30 @@
+﻿ <!DOCTYPE html>
+<html class="h-100">
+<head>
+    <meta charset="utf-8">
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet" />
+    <link href="~/Content/site.css" rel="stylesheet" />
+    <link href="~/Content/toastr.min.css" rel="stylesheet" />
+    <link href="~/Content/all.min.css" rel="stylesheet" />
+    <title>FN Store | @ViewBag.Title</title>
+</head>
+<body class="d-flex flex-column h-100">
+
+    @Html.Partial("_menu")     
+
+    <div class="container mt-3">
+        @RenderBody()
+    </div>
+    <footer class="footer footer-custom mt-auto py-3 bg-info">
+        <div class="container">
+            <span class="text-muted">&copy;@DateTime.Now.Year FN Corporation</span>
+        </div>
+    </footer>
+
+    <script src="~/Scripts/jquery-3.6.0.min.js"></script>
+    <script src="~/Scripts/toastr.min.js"></script>
+    <script src="~/Scripts/bootstrap.bundle.min.js"></script>
+    @RenderSection("scripts",false)
+</body>
+</html>
+
