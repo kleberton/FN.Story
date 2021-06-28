@@ -74,3 +74,8 @@ C:\ProjetosVS\FN.Store\FN.Store.UI\obj\Debug\FN.Store.UI.csproj.CopyComplete
 C:\ProjetosVS\FN.Store\FN.Store.UI\obj\Debug\FN.Store.UI.dll
 C:\ProjetosVS\FN.Store\FN.Store.UI\obj\Debug\FN.Store.UI.pdb
 C:\ProjetosVS\FN.Store\FN.Store.UI\obj\Debug\FN.Store.UI.csprojAssemblyReference.cache
+C:\ProjetosVS\FN.Store\FN.Store.UI\bin\FN.Store.Data.dll
+C:\ProjetosVS\FN.Store\FN.Store.UI\bin\FN.Store.Domain.dll
+C:\ProjetosVS\FN.Store\FN.Store.UI\bin\FN.Store.Data.pdb
+C:\ProjetosVS\FN.Store\FN.Store.UI\bin\FN.Store.Data.dll.config
+C:\ProjetosVS\FN.Store\FN.Store.UI\bin\FN.Store.Domain.pdb

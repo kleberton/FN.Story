@@ -1,10 +1,9 @@
-﻿using FN.Store.UI.Data;
-using FN.Store.UI.Models;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using FN.Store.Data.EF.Repositories;
+using FN.Store.Domain.Contracts.Repositories;
+using FN.Store.Domain.Entities;
+using FN.Store.UI.ViewModels.Produtos.AddEdit;
+using FN.Store.UI.ViewModels.Produtos.AddEdit.Maps;
+using FN.Store.UI.ViewModels.Produtos.Index.Maps;
 using System.Web.Mvc;
 
 namespace FN.Store.UI.Controllers
@@ -13,43 +12,46 @@ namespace FN.Store.UI.Controllers
     public class ProdutosController : Controller
     {
 
-        private readonly FNStoreDataContext _ctx = new FNStoreDataContext();
+        private readonly IProdutoRepository _produtoRepository = new ProdutoRepositoryEF();
+        private readonly ITipoDeProdutoRepository _tipoDeProdutoRepository = new TipoDeProdutoRepositoryEF();
+
         public ViewResult Index()
         {
-            var produtos = _ctx.Produtos.ToList();
+            var produtos = _produtoRepository.Get().ToProdutoIndexVM();
+
             return View(produtos);
         }
 
         [HttpGet]
         public ViewResult AddEdit(int? id)
         {
-            Produto produto = new Produto();
+            var produto = new ProdutoAddEditVM();
 
             if (id != null)
-                produto = _ctx.Produtos.Find(id);
+                produto = _produtoRepository.Get((int)id).ToProdutoAddEditVM();
 
-            var tipos = _ctx.TipoDeProdutos.ToList();
+            var tipos = _tipoDeProdutoRepository.Get();
             ViewBag.Tipos = tipos;
 
             return View(produto);
         }
 
         [HttpPost]
-        public ActionResult AddEdit(Produto produto)
+        public ActionResult AddEdit(ProdutoAddEditVM produtoVM)
         {
+            var produto = produtoVM.ToProduto();
+
             if (ModelState.IsValid)
             {
                 if (produto.Id == 0)
-                    _ctx.Produtos.Add(produto);
-                else
-                    _ctx.Entry(produto).State = System.Data.Entity.EntityState.Modified;
-
-                _ctx.SaveChanges();
+                    _produtoRepository.Add(produto);
+                else                    
+                _produtoRepository.Edit(produto);                
 
                 return RedirectToAction("Index");
             }
 
-            var tipos = _ctx.TipoDeProdutos.ToList();
+            var tipos = _tipoDeProdutoRepository.Get();
             ViewBag.Tipos = tipos;
 
             return View(produto);
@@ -57,20 +59,20 @@ namespace FN.Store.UI.Controllers
 
         public ActionResult DelProd(int id)
         {
-            var produto = _ctx.Produtos.Find(id);
+            var produto = _produtoRepository.Get(id);
 
             if (produto == null)
                 return HttpNotFound();
 
-            _ctx.Produtos.Remove(produto);
-            _ctx.SaveChanges();
+            _produtoRepository.Delete(produto);
 
             return null;
         }
 
         protected override void Dispose(bool disposing)
         {
-            _ctx.Dispose();
+            _produtoRepository.Dispose();
+            _tipoDeProdutoRepository.Dispose();
         }
 
     }
