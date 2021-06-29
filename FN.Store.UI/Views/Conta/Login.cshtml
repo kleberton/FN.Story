@@ -1,6 +1,4 @@
-﻿@using FN.Store.UI.Models
-
-@model LoginVM
+﻿@model FN.Store.UI.ViewModels.Conta.Login.LoginVM
 
 @{
     ViewBag.Title = "Login";
@@ -8,7 +6,9 @@
 
 <h2>@ViewBag.Title</h2>
 <div class="row">
+    
     <form class="col-md-6 col-sm-12 " method="post">
+        
         <div class="form-group mb-3">
             <label class="form-label">E-mail</label>
             @Html.TextBoxFor(m => m.Email, new { @class = "form-control", autofocus = "" })

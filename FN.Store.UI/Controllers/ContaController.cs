@@ -1,9 +1,6 @@
-﻿using FN.Store.Data.EF;
-using FN.Store.Data.EF.Repositories;
-using FN.Store.Domain.Contracts.Repositories;
-using FN.Store.UI.Infra.Helpers;
-using FN.Store.UI.Models;
-using System.Linq;
+﻿using FN.Store.Domain.Contracts.Repositories;
+using FN.Store.Domain.Helpers;
+using FN.Store.UI.ViewModels.Conta.Login;
 using System.Web.Mvc;
 using System.Web.Security;
 
@@ -11,7 +8,12 @@ namespace FN.Store.UI.Controllers
 {
     public class ContaController : Controller
     {
-        private readonly IUsuarioRepository _usuarioRepository = new UsuarioRepositoryEF();
+        private readonly IUsuarioRepository _usuarioRepository;
+
+        public ContaController(IUsuarioRepository usuarioRepository)
+        {
+            _usuarioRepository = usuarioRepository;
+        }
 
         [HttpGet]
         public ActionResult Login(string returnURL)
@@ -59,7 +61,6 @@ namespace FN.Store.UI.Controllers
 
         protected override void Dispose(bool disposing)
         {
-            _usuarioRepository.Dispose();
         }
     }
 }

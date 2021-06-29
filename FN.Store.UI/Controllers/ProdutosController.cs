@@ -12,8 +12,14 @@ namespace FN.Store.UI.Controllers
     public class ProdutosController : Controller
     {
 
-        private readonly IProdutoRepository _produtoRepository = new ProdutoRepositoryEF();
-        private readonly ITipoDeProdutoRepository _tipoDeProdutoRepository = new TipoDeProdutoRepositoryEF();
+        private readonly IProdutoRepository _produtoRepository;
+        private readonly ITipoDeProdutoRepository _tipoDeProdutoRepository;
+
+        public ProdutosController(IProdutoRepository produtoRepository, ITipoDeProdutoRepository tipoDeProdutoRepository)
+        {
+            _produtoRepository = produtoRepository;
+            _tipoDeProdutoRepository = tipoDeProdutoRepository;
+        }
 
         public ViewResult Index()
         {
@@ -45,8 +51,8 @@ namespace FN.Store.UI.Controllers
             {
                 if (produto.Id == 0)
                     _produtoRepository.Add(produto);
-                else                    
-                _produtoRepository.Edit(produto);                
+                else
+                    _produtoRepository.Edit(produto);
 
                 return RedirectToAction("Index");
             }
@@ -71,8 +77,6 @@ namespace FN.Store.UI.Controllers
 
         protected override void Dispose(bool disposing)
         {
-            _produtoRepository.Dispose();
-            _tipoDeProdutoRepository.Dispose();
         }
 
     }

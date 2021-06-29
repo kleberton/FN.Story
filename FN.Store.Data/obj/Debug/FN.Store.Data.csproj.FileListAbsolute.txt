@@ -1,5 +1,3 @@
-C:\ProjetosVS\FN.Store\FN.Store.Data\obj\Debug\FN.Store.Data.csprojAssemblyReference.cache
-C:\ProjetosVS\FN.Store\FN.Store.Data\obj\Debug\FN.Store.Data.csproj.CoreCompileInputs.cache
 C:\ProjetosVS\FN.Store\FN.Store.Data\bin\Debug\FN.Store.Data.dll.config
 C:\ProjetosVS\FN.Store\FN.Store.Data\bin\Debug\FN.Store.Data.dll
 C:\ProjetosVS\FN.Store\FN.Store.Data\bin\Debug\FN.Store.Data.pdb
@@ -9,6 +7,16 @@ C:\ProjetosVS\FN.Store\FN.Store.Data\bin\Debug\FN.Store.Domain.dll
 C:\ProjetosVS\FN.Store\FN.Store.Data\bin\Debug\FN.Store.Domain.pdb
 C:\ProjetosVS\FN.Store\FN.Store.Data\bin\Debug\EntityFramework.xml
 C:\ProjetosVS\FN.Store\FN.Store.Data\bin\Debug\EntityFramework.SqlServer.xml
+C:\ProjetosVS\FN.Store\FN.Store.Data\obj\Debug\FN.Store.Data.csprojAssemblyReference.cache
+C:\ProjetosVS\FN.Store\FN.Store.Data\obj\Debug\FN.Store.Data.csproj.CoreCompileInputs.cache
 C:\ProjetosVS\FN.Store\FN.Store.Data\obj\Debug\FN.Store.Data.csproj.CopyComplete
 C:\ProjetosVS\FN.Store\FN.Store.Data\obj\Debug\FN.Store.Data.dll
 C:\ProjetosVS\FN.Store\FN.Store.Data\obj\Debug\FN.Store.Data.pdb
+C:\ProjetosVS\FN.Store\FN.Store.Data\bin\Debug\System.Configuration.ConfigurationManager.dll
+C:\ProjetosVS\FN.Store\FN.Store.Data\bin\Debug\System.Security.AccessControl.dll
+C:\ProjetosVS\FN.Store\FN.Store.Data\bin\Debug\System.Security.Permissions.dll
+C:\ProjetosVS\FN.Store\FN.Store.Data\bin\Debug\System.Security.Principal.Windows.dll
+C:\ProjetosVS\FN.Store\FN.Store.Data\bin\Debug\System.Configuration.ConfigurationManager.xml
+C:\ProjetosVS\FN.Store\FN.Store.Data\bin\Debug\System.Security.AccessControl.xml
+C:\ProjetosVS\FN.Store\FN.Store.Data\bin\Debug\System.Security.Permissions.xml
+C:\ProjetosVS\FN.Store\FN.Store.Data\bin\Debug\System.Security.Principal.Windows.xml

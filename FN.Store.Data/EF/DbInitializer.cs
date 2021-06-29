@@ -9,9 +9,9 @@ using System.Threading.Tasks;
 
 namespace FN.Store.Data.EF
 {
-    internal class DbInitializer : CreateDatabaseIfNotExists<FNStoreDataContext>
+    internal class DbInitializer : CreateDatabaseIfNotExists<FNStoreDataContextEF>
     {
-        protected override void Seed(FNStoreDataContext context)
+        protected override void Seed(FNStoreDataContextEF context)
         {
             var alimento = new TipoDeProduto { Nome = "Alimento" };
             var higiene = new TipoDeProduto { Nome = "Higiene" };
