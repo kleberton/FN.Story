@@ -1,6 +1,5 @@
 C:\ProjetosVS\FN.Store\FN.Store.Domain\bin\Debug\FN.Store.Domain.dll
 C:\ProjetosVS\FN.Store\FN.Store.Domain\bin\Debug\FN.Store.Domain.pdb
-C:\ProjetosVS\FN.Store\FN.Store.Domain\obj\Debug\FN.Store.Domain.csprojAssemblyReference.cache
 C:\ProjetosVS\FN.Store\FN.Store.Domain\obj\Debug\FN.Store.Domain.csproj.CoreCompileInputs.cache
 C:\ProjetosVS\FN.Store\FN.Store.Domain\obj\Debug\FN.Store.Domain.dll
 C:\ProjetosVS\FN.Store\FN.Store.Domain\obj\Debug\FN.Store.Domain.pdb

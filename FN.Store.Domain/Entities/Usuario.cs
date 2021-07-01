@@ -1,4 +1,6 @@
-﻿namespace FN.Store.Domain.Entities
+﻿using System;
+
+namespace FN.Store.Domain.Entities
 {
     public class Usuario : Entity
     {

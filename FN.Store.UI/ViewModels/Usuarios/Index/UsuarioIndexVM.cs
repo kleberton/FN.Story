@@ -4,16 +4,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace FN.Store.UI.ViewModels.Produtos.Index
+namespace FN.Store.UI.ViewModels.Usuarios.Index
 {
-    public class ProdutoIndexVM
-    {
+    public class UsuarioIndexVM
+    {  
         public int Id { get; set; }
         public string Nome { get; set; }
-        public decimal Preco { get; set; }
-        public short Qtde { get; set; }
-        public string Tipo { get; set; }
+        public string Email { get; set; }
+        public string Senha { get; set; }
         public DateTime DataCadastro { get; set; }
     }
-
 }

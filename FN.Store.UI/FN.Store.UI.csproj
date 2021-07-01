@@ -186,6 +186,7 @@
     <Compile Include="Controllers\ContaController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ProdutosController.cs" />
+    <Compile Include="Controllers\UsuariosController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -195,6 +196,10 @@
     <Compile Include="ViewModels\Produtos\AddEdit\ProdutoAddEditVM.cs" />
     <Compile Include="ViewModels\Produtos\Index\Maps\Extensions.cs" />
     <Compile Include="ViewModels\Produtos\Index\ProdutoIndexVM.cs" />
+    <Compile Include="ViewModels\Usuarios\AddEdit\Map\Extensions.cs" />
+    <Compile Include="ViewModels\Usuarios\AddEdit\UsuarioAddEditVM.cs" />
+    <Compile Include="ViewModels\Usuarios\Index\Map\Extensions.cs" />
+    <Compile Include="ViewModels\Usuarios\Index\UsuarioIndexVM.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\web.config" />
@@ -231,6 +236,8 @@
     <Content Include="Scripts\jquery-3.6.0.min.map" />
     <Content Include="Views\Conta\Login.cshtml" />
     <Content Include="Views\Shared\_menu.cshtml" />
+    <Content Include="Views\Usuarios\Index.cshtml" />
+    <Content Include="Views\Usuarios\AddEdit.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

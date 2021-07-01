@@ -1,0 +1,55 @@
+﻿@model FN.Store.UI.ViewModels.Usuarios.AddEdit.UsuarioAddEditVM
+
+@{
+    ViewBag.Title = $"{(Model.Id == 0 ? "Adicionar" : "Editar") } Usuário";
+}
+<h2>@ViewBag.Title </h2>
+
+<div class="row">
+    <form method="post" class="col-md-6 col-sm-12">
+        <div class="mb-3 form-group">
+            <label for="txtNome" class="form-label">Nome:</label>
+            @Html.TextBoxFor(m => m.Nome, new { @class = "form-control", autofocus = "" })
+            <small>
+                @Html.ValidationMessageFor(m => m.Nome, null, new { @class = "text-danger" })
+            </small>
+        </div>
+
+        <div class="mb-3 form-group">
+            <label class="form-label">E-mail:</label>
+            @Html.TextBoxFor(m => m.Email, new { @class = "form-control" })
+            <small>
+                @Html.ValidationMessageFor(m => m.Email, null, new { @class = "text-danger" })
+            </small>
+        </div>
+
+        @if (Model.Id == 0)
+        {
+            <div class="mb-3 form-group">
+                <label class="form-label">Senha:</label>
+                @Html.TextBoxFor(m => m.Senha, new { @class = "form-control" })
+                <small>
+                    @Html.ValidationMessageFor(m => m.Senha, null, new { @class = "text-danger" })
+                </small>
+            </div>
+        }
+        else
+        {
+            <input type="text" name="Senha" value="@Model.Senha" class="d-none" />
+        }
+
+        <div>
+            @Html.ValidationSummary(true)
+        </div>
+
+        <div>
+            <button class="btn btn-outline-secondary">Salvar</button>
+            <a class="btn btn-outline-info" href="@Url.Action("Index")">Cancelar</a>
+        </div>
+    </form>
+</div>
+@section scripts{
+    <script src="~/Scripts/jquery.validate.min.js"></script>
+    <script src="~/Scripts/jquery.validate.unobtrusive.min.js"></script>
+    <script src="~/Scripts/bootstrap.validate.js"></script>
+}
