@@ -173,6 +173,7 @@
     <Content Include="Scripts\jquery.validate.min.js" />
     <Content Include="Scripts\jquery.validate.unobtrusive.js" />
     <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
+    <Content Include="Scripts\site.js" />
     <Content Include="Scripts\toastr.js" />
     <Content Include="Scripts\toastr.min.js" />
     <Content Include="Web.config" />
@@ -186,6 +187,7 @@
     <Compile Include="Controllers\ContaController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ProdutosController.cs" />
+    <Compile Include="Controllers\TipoDeProdutoController.cs" />
     <Compile Include="Controllers\UsuariosController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -196,6 +198,8 @@
     <Compile Include="ViewModels\Produtos\AddEdit\ProdutoAddEditVM.cs" />
     <Compile Include="ViewModels\Produtos\Index\Maps\Extensions.cs" />
     <Compile Include="ViewModels\Produtos\Index\ProdutoIndexVM.cs" />
+    <Compile Include="ViewModels\TipoDeProdutos\TipoDeProdutoVM.cs" />
+    <Compile Include="ViewModels\TipoDeProdutos\Map\Extensions.cs" />
     <Compile Include="ViewModels\Usuarios\AddEdit\Map\Extensions.cs" />
     <Compile Include="ViewModels\Usuarios\AddEdit\UsuarioAddEditVM.cs" />
     <Compile Include="ViewModels\Usuarios\Index\Map\Extensions.cs" />
@@ -238,6 +242,9 @@
     <Content Include="Views\Shared\_menu.cshtml" />
     <Content Include="Views\Usuarios\Index.cshtml" />
     <Content Include="Views\Usuarios\AddEdit.cshtml" />
+    <Content Include="Views\TipoDeProduto\Index.cshtml" />
+    <Content Include="Views\TipoDeProduto\AddEdit.cshtml" />
+    <Content Include="Views\TipoDeProduto\_AddEditModalPartial.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

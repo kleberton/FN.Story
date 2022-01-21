@@ -81,8 +81,9 @@ C:\ProjetosVS\FN.Store\FN.Store.UI\bin\System.Web.Webpages.Deployment.xml
 C:\ProjetosVS\FN.Store\FN.Store.UI\bin\System.Web.Webpages.Razor.xml
 C:\ProjetosVS\FN.Store\FN.Store.UI\bin\System.Web.Helpers.xml
 C:\ProjetosVS\FN.Store\FN.Store.UI\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
-C:\ProjetosVS\FN.Store\FN.Store.UI\obj\Debug\FN.Store.UI.csprojAssemblyReference.cache
 C:\ProjetosVS\FN.Store\FN.Store.UI\obj\Debug\FN.Store.UI.csproj.CoreCompileInputs.cache
 C:\ProjetosVS\FN.Store\FN.Store.UI\obj\Debug\FN.Store.UI.csproj.CopyComplete
 C:\ProjetosVS\FN.Store\FN.Store.UI\obj\Debug\FN.Store.UI.dll
 C:\ProjetosVS\FN.Store\FN.Store.UI\obj\Debug\FN.Store.UI.pdb
+C:\ProjetosVS\FN.Store\FN.Store.UI\bin\System.Threading.Tasks.Extensions.dll
+C:\ProjetosVS\FN.Store\FN.Store.UI\obj\Debug\FN.Store.UI.csproj.AssemblyReference.cache

@@ -1,0 +1,50 @@
+﻿@model FN.Store.UI.ViewModels.TipoDeProdutos.TipoDeProdutoVM
+
+@{
+    ViewBag.Title = $"{(Model.Id == 0 ? "Adicionar" : "Editar") } Tipo de Produto";
+}
+
+@*<form id="idFormTipoDeProduto" method="post" action="TipoDeProduto/AddEditModal" class="col-md-6 col-sm-12">*@
+
+@using (Ajax.BeginForm("AddEditModal", "TipoDeProduto", new AjaxOptions() { HttpMethod = "POST", UpdateTargetId = "frmEmp" }))
+{
+
+    <div class="modal fade" id="addEditTipoDeProduto">
+        <div class="modal-dialog">
+            <div class="modal-content">
+
+                <div class="modal-header">
+                    <h5 class="modal-title" id="lblAddEditTipoDeProduto">@ViewBag.Title</h5>
+                    <a class="close" data-dismiss="modal">
+                        <i class="fas fa-times"></i>
+                    </a>
+                </div>
+
+                <div class="modal-body" id="frmEmp">
+
+                    @Html.TextBoxFor(m => m.Id, new { @class = "d-none" })
+
+                    <div class="mb-3 form-group">
+                        <label for="txtNome" class="form-label">Nome:</label>
+                        @Html.TextBoxFor(m => m.Nome, new { @class = "form-control", autofocus = "" })
+                        <small>
+                            @Html.ValidationMessageFor(m => m.Nome, null, new { @class = "text-danger" })
+                        </small>
+                    </div>
+
+                    <div>
+                        @Html.ValidationSummary(true)
+                    </div>
+
+                </div>
+                @*data-save="modal"*@
+                <div class="modal-footer">
+                    <button class="btn btn-outline-secondary">Salvar</button>
+                    <button class="btn btn-outline-info" data-dismiss="modal">Cancelar</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+}
+@*</form>*@

@@ -24,4 +24,5 @@ namespace FN.Store.UI.ViewModels.Produtos.AddEdit
 
         public DateTime DataCadastro { get; set; } 
     }
+
 }

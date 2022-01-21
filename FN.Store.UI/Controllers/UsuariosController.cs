@@ -61,5 +61,17 @@ namespace FN.Store.UI.Controllers
 
             return View(usuarioVM);
         }
+
+        public ActionResult DelProd(int id)
+        {
+            var usuario = _usuarioRepository.Get(id);
+
+            if (usuario == null)
+                return HttpNotFound();
+
+            _usuarioRepository.Delete(usuario);
+
+            return null;
+        }
     }
 }
